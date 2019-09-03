@@ -1,0 +1,14 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<p>
+	Start editing to see some magic happen :)
+
+</p>
+<h1>Hello {{userDetail.email}}!</h1>
+<div *ngIf="!isLoading">
+	Id: <span> {{userDetail.id}}</span><br/>
+   Email: {{userDetail.email}}<br/>
+   Avatar: {{userDetail.avatar}}<br/>
+    <!-- I donot have first_name and last_name in model. but we can see the value in UI. -->
+  <span style="color:red;"> FirstName: {{userDetail.first_name}}</span><br/>
+   <span style="color:red;">LastName: {{userDetail.last_name}}</span>
+  </div>
